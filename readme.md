@@ -2,7 +2,7 @@
 
 🎲🎲🎲🎲🎲🎲  
 Gra w kości na sześć kości sześciościennych dla dwóch lub więcej graczy.  
-Wersja do druku kolorowego html (ctrl+p): tymski.github.io/6k6  
+Wersja do druku kolorowego html (ctrl+p): https://tymski.github.io/6k6  
 
 Oparta na pokerze na 5 kości.
 
