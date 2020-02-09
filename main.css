@@ -24,12 +24,24 @@ body {
     font-size: 1.5cm;
     margin: 0 auto;
     text-align: center;
-    text-shadow: #ededed 3px 2px 0;
+    text-shadow: #ededed 0.5mm 0.3mm 0.2mm;
+}
+
+.subtitle {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5mm;
+    margin-top: -7mm;
+}
+
+header .spacer {
+    height: 5mm;
 }
 
 .row div {
     border-style: solid;
     border-color: rgb(88, 88, 88);
+    border-color: rgba(0, 0, 0, 0.65);
     border-right-width: 0.2mm;
     border-top-width: 0;
     border-left-width: 0;
@@ -43,6 +55,8 @@ body {
     justify-content: center;
     text-align: center;
     font-family: 'Merriweather', serif;
+    white-space: pre-wrap;
+    text-shadow: 0mm 0mm 0.2mm rgb(255, 255, 255), 0mm 0mm 0.3mm rgb(255, 255, 255), 0mm 0mm 0.3mm rgb(255, 255, 255);
 }
 
 .row.double-border div {
@@ -57,10 +71,10 @@ body {
     border-color: rgb(59, 59, 59);
 }
 .row div:nth-child(4) {
-    border-right-width: 0.4mm;
+    border-right-width: 0.5mm;
 }
 .row div:last-child {
-    border-right-width: 0px;
+    border-right-width: 0;
 }
 .row:last-of-type {
     background-color: rgb(216, 216, 216);
@@ -78,15 +92,23 @@ body {
 }
 
 .szansa {
-    max-width: 1.12cm;
+    max-width: 0.7cm;
+    font-size: 0.8em;
 }
 
-.uklad {
+/* .percent::after {
+    white-space: pre;
+    content: '%';
+    font-size: 0.9em;
+    color: #000000ad;
+} */
+
+.układ {
     font-weight: bold;
     min-width: 2.65cm;
 }
-.uklad2 {
-    min-width: 2.55cm;
+.układ2 {
+    min-width: 2.3cm;
     font-size: 0.85em;
 }
 
@@ -95,7 +117,7 @@ body {
 }
 
 .double-border {
-    border-bottom: 2px solid green;
+    border-bottom: 0.5mm solid green;
 }
 
 .blue {
@@ -107,10 +129,91 @@ body {
 }
 
 .bigger {
-    font-size: 0.6cm;
-    letter-spacing: -0.05cm;
+    font-size: 0.55cm;
+    letter-spacing: -0.07cm;
 }
 
 .small-height {
     max-height: 0.6cm;
+}
+
+.oczko .player {
+    background: url('eye.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+}
+
+.duże .układ {
+    font-size: 1.15em;
+}
+
+.małe .układ {
+    font-size: 0.9em;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.player {
+    padding-left: 2mm;
+}
+
+.parzyste .player:not(.first) span {
+    box-sizing: content-box;
+    width: 1mm;
+    height: 100%;
+    border-left-width: 0.2mm;
+    margin-right: auto;
+    margin-left: 0.8mm;
+    border-left-style: solid;
+    border-color: rgb(88, 88, 88);
+    border-color: rgba(0, 0, 0, 0.65);
+}
+
+.parzyste .player {
+    margin-left: -0.5mm;
+    margin-right: 0.5mm;
+}
+
+.duże .player span {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 0, 0, 0.116);
+}
+
+.małe .player span {
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255, 0, 0, 0.075);
+}
+
+.bonus,
+.układ,
+.układ2 {
+    border-right-color: rgba(0, 0, 0, 0.425) !important;
+}
+
+.row:last-of-type {
+    -webkit-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 0.473);
+}
+
+.full {
+    background-color: rgb(225, 255, 255);
+}
+
+.parzyste .układ2,
+.parzyste .układ {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: orange;
+}
+
+.nieparzyste .układ2,
+.nieparzyste .układ {
+    text-decoration: underline;
+    text-decoration-color: orange;
 }
