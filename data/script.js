@@ -1,4 +1,4 @@
-var path = 'uklady.csv';
+var path = 'data/uklady.csv';
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -34,6 +34,14 @@ function makeTemplate(csv) {
             <div class="player"><span></span></div>
             <div class="player"><span></span></div>
         </div>`;
+        rowTemplate = rowTemplate.split('⚀').join('<img src="data/dice/1.png", alt="⚀">');
+        rowTemplate = rowTemplate.split('⚁').join('<img src="data/dice/2.png", alt="⚁">');
+        rowTemplate = rowTemplate.split('⚂').join('<img src="data/dice/3.png", alt="⚂">');
+        rowTemplate = rowTemplate.split('⚃').join('<img src="data/dice/4.png", alt="⚃">');
+        rowTemplate = rowTemplate.split('⚄').join('<img src="data/dice/5.png", alt="⚄">');
+        rowTemplate = rowTemplate.split('⚅').join('<img src="data/dice/6.png", alt="⚅">');
+        // rowTemplate = rowTemplate.split('■').join('<img src="data/dice/0.png", alt="■">');
+        rowTemplate = rowTemplate.split('_').join('<img src="data/dice/empty.png", alt="■">');
         var element = document.createElement('template');
         element.innerHTML = rowTemplate;
         element = element.content.firstChild;

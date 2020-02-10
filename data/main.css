@@ -1,3 +1,8 @@
+:root {
+    --border-thickness: 0.24mm;
+    --border-thickness-large: 0.5mm;
+}
+
 html,
 body {
     padding: 0;
@@ -42,10 +47,10 @@ header .spacer {
     border-style: solid;
     border-color: rgb(88, 88, 88);
     border-color: rgba(0, 0, 0, 0.65);
-    border-right-width: 0.2mm;
+    border-right-width: var(--border-thickness);
     border-top-width: 0;
     border-left-width: 0;
-    border-bottom-width: 0.2mm;
+    border-bottom-width: var(--border-thickness);
 
     display: inline-block;
     padding: 0;
@@ -66,12 +71,12 @@ header .spacer {
 .row:first-of-type {
     border-style: solid;
     border-width: 0;
-    border-top-width: 0.4mm;
-    border-bottom-width: 0.4mm;
+    border-top-width: var(--border-thickness-large);
+    border-bottom-width: var(--border-thickness-large);
     border-color: rgb(59, 59, 59);
 }
 .row div:nth-child(4) {
-    border-right-width: 0.5mm;
+    border-right-width: var(--border-thickness-large);
 }
 .row div:last-child {
     border-right-width: 0;
@@ -92,8 +97,19 @@ header .spacer {
 }
 
 .szansa {
-    max-width: 0.7cm;
+    max-width: 0.8cm;
     font-size: 0.8em;
+    font-style: italic;
+}
+
+.układ2 img {
+    max-width: 14%;
+    max-height: 100%;
+    margin: 0.1mm;
+}
+.układ2 img[alt='■'] {
+    max-width: 9%;
+    margin: 0.2mm;
 }
 
 /* .percent::after {
@@ -164,7 +180,7 @@ div {
     box-sizing: content-box;
     width: 1mm;
     height: 100%;
-    border-left-width: 0.2mm;
+    border-left-width: var(--border-thickness);
     margin-right: auto;
     margin-left: 0.8mm;
     border-left-style: solid;
@@ -209,11 +225,11 @@ div {
 .parzyste .układ {
     text-decoration: underline;
     text-decoration-style: double;
-    text-decoration-color: orange;
+    text-decoration-color: rgb(168, 168, 168);
 }
 
 .nieparzyste .układ2,
 .nieparzyste .układ {
     text-decoration: underline;
-    text-decoration-color: orange;
+    text-decoration-color: rgb(168, 168, 168);
 }
