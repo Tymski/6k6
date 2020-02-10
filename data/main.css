@@ -1,0 +1,246 @@
+:root {
+    --border-thickness: 0.24mm;
+    --border-thickness-large: 0.5mm;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+    color: #202020;
+}
+
+.content {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 2mm 2mm 2mm;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Baloo Bhai', cursive;
+    font-variant: small-caps;
+    font-size: 1.5cm;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: #ededed 0.5mm 0.3mm 0.2mm;
+    padding-top: 1mm;
+}
+
+.subtitle {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5mm;
+    margin-top: -7mm;
+}
+
+header .spacer {
+    height: 3mm;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+.row div {
+    border-style: solid;
+    border-color: rgb(88, 88, 88);
+    border-color: rgba(0, 0, 0, 0.65);
+    border-right-width: var(--border-thickness);
+    border-top-width: 0;
+    border-left-width: 0;
+    border-bottom-width: var(--border-thickness);
+
+    display: inline-block;
+    padding: 0;
+    width: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    white-space: pre-wrap;
+    text-shadow: 0mm 0mm 0.2mm rgb(255, 255, 255), 0mm 0mm 0.3mm rgb(255, 255, 255), 0mm 0mm 0.3mm rgb(255, 255, 255);
+}
+
+.row.double-border div {
+    border-bottom-width: 0;
+}
+
+.row:first-of-type {
+    border-style: solid;
+    border-width: 0;
+    border-top-width: var(--border-thickness-large);
+    border-bottom-width: var(--border-thickness-large);
+    border-color: rgb(59, 59, 59);
+}
+.row div:nth-child(4) {
+    border-right-width: var(--border-thickness-large);
+}
+.row div:last-child {
+    border-right-width: 0;
+}
+.row:last-of-type {
+    background-color: rgb(216, 216, 216);
+}
+
+.row {
+    display: flex;
+    height: 1.2cm;
+    border-color: white;
+}
+
+.bonus {
+    max-width: 1.5cm;
+    font-size: 0.6cm;
+}
+
+.szansa {
+    max-width: 0.8cm;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.układ2 img {
+    max-width: 14%;
+    max-height: 100%;
+    margin: 0.1mm;
+}
+.układ2 img[alt='■'] {
+    max-width: 9%;
+    margin: 0.2mm;
+}
+
+/* .percent::after {
+    white-space: pre;
+    content: '%';
+    font-size: 0.9em;
+    color: #000000ad;
+} */
+
+.układ {
+    font-weight: bold;
+    min-width: 2.65cm;
+}
+.układ2 {
+    min-width: 2.3cm;
+    font-size: 0.85em;
+}
+
+.header-row {
+    background-color: rgb(218, 238, 202);
+}
+
+.double-border {
+    border-bottom: 0.5mm solid green;
+}
+
+.blue {
+    background-color: rgb(229, 227, 252);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 217);
+}
+
+.bigger {
+    font-size: 0.55cm;
+    letter-spacing: -0.07cm;
+}
+
+.small-height {
+    max-height: 0.6cm;
+}
+
+.oczko .player {
+    background: url('eye.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+}
+
+.duże .układ {
+    font-size: 1.15em;
+}
+
+.małe .układ {
+    font-size: 0.9em;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.player {
+    padding-left: 2mm;
+}
+
+.parzyste .player:not(.first) span {
+    box-sizing: content-box;
+    width: 1mm;
+    height: 100%;
+    border-left-width: var(--border-thickness);
+    margin-right: auto;
+    margin-left: 0.8mm;
+    border-left-style: solid;
+    border-color: rgb(88, 88, 88);
+    border-color: rgba(0, 0, 0, 0.65);
+}
+
+.parzyste .player {
+    margin-left: -0.5mm;
+    margin-right: 0.5mm;
+}
+
+.duże .player span {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 0, 0, 0.116);
+}
+
+.małe .player span {
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255, 0, 0, 0.075);
+}
+
+.bonus,
+.układ,
+.układ2 {
+    border-right-color: rgba(0, 0, 0, 0.425) !important;
+}
+
+.row:last-of-type {
+    -webkit-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 0.473);
+}
+
+.full {
+    background-color: rgb(225, 255, 255);
+}
+
+.parzyste .układ2,
+.parzyste .układ {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(168, 168, 168);
+}
+
+.nieparzyste .układ2,
+.nieparzyste .układ {
+    text-decoration: underline;
+    text-decoration-color: rgb(168, 168, 168);
+}
+
+.parzyste,
+.nieparzyste {
+    background-color: rgba(255, 166, 0, 0.041);
+}
