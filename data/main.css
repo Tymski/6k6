@@ -21,6 +21,7 @@ body {
     background-color: #fff;
     margin: 0 auto;
     padding: 0 2mm 2mm 2mm;
+    box-sizing: border-box;
 }
 
 .title {
@@ -30,7 +31,7 @@ body {
     margin: 0 auto;
     text-align: center;
     text-shadow: #ededed 0.5mm 0.3mm 0.2mm;
-    margin-top: 2mm;
+    padding-top: 1mm;
 }
 
 .subtitle {
@@ -41,7 +42,11 @@ body {
 }
 
 header .spacer {
-    height: 5mm;
+    height: 3mm;
+}
+
+header {
+    box-sizing: border-box;
 }
 
 .row div {
