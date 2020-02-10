@@ -30,6 +30,7 @@ body {
     margin: 0 auto;
     text-align: center;
     text-shadow: #ededed 0.5mm 0.3mm 0.2mm;
+    margin-top: 2mm;
 }
 
 .subtitle {
@@ -232,4 +233,9 @@ div {
 .nieparzyste .układ {
     text-decoration: underline;
     text-decoration-color: rgb(168, 168, 168);
+}
+
+.parzyste,
+.nieparzyste {
+    background-color: rgba(255, 166, 0, 0.041);
 }

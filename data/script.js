@@ -42,6 +42,7 @@ function makeTemplate(csv) {
         rowTemplate = rowTemplate.split('⚅').join('<img src="data/dice/6.png", alt="⚅">');
         // rowTemplate = rowTemplate.split('■').join('<img src="data/dice/0.png", alt="■">');
         rowTemplate = rowTemplate.split('_').join('<img src="data/dice/empty.png", alt="■">');
+
         var element = document.createElement('template');
         element.innerHTML = rowTemplate;
         element = element.content.firstChild;
@@ -52,6 +53,7 @@ function makeTemplate(csv) {
             element.classList.add(cssClass);
         });
         content.appendChild(element);
+
         counter++;
     });
 }

@@ -12,10 +12,10 @@ Wielki Full,■■■■_■■,+15,1,full
 Kareta,■■■■,+10,5,yellow 
 Poker,■■■■■,+30,0.4,yellow 
 Duży Poker,■■■■■■,+60,.01,yellow 
-Parzyste,2∨4∨6,,1.6,parzyste 
-Nieparzyste,1∨3∨5,,1.6,nieparzyste
 Duże,≥ 4,,1.6,duże 
 Małe,≤ 3,,1.6,małe 
+Parzyste,2∨4∨6,,1.6,parzyste 
+Nieparzyste,1∨3∨5,,1.6,nieparzyste
 Oczko👁,suma kości równa 21,=21,9.3,oczko 
 Punkty,suma oczek,,,
 Przerzut,dodatkowy,,,small-height
