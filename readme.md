@@ -6,9 +6,14 @@ Gra oparta jest na pokerze na pięć kości sześciościennych, ale jest rozszer
 
 ## Drukowanie planszy
 
-Działa w przeglądarkach Google Chrome i w Operze.
+### Opcja 1: Drukowanie z pdf
+
+[Tabela w .PDF](data/pdf/6k6.pdf)
+
+### Opcja 2: Drukowanie z przeglądarki
+
 Po wejściu na https://tymski.github.io/6k6, wciśnij Ctrl+P aby otworzyć okno drukowania.  
-Ustawienia drukowania: układ pionowy, druk kolorowy, brak marginesów, skalowanie 100%, drukuj obraz w tle.  
+Zalecane ustawienia drukowania: układ pionowy, druk kolorowy, brak marginesów, skalowanie 100%, drukuj obraz w tle.  
 
 ![Tabela z punktacją gry Poker 6k6](data/thumbnail.png)
 
@@ -22,7 +27,7 @@ W każdej z rund gracz ma 3 rzuty. Pierwszy rzut zawsze odbywa się sześcioma k
 
 Po wykonaniu rzutów gracz zapisuje punkty do wybranej przez siebie kategorii. Ilość punktów zależna jest od ilości wyrzuconych oczek oraz bonusowych punktów za układ.
 
-|      Układ       |                                                  dokładny opis układu                                                  |    ilość uzyskanych punktów     |
+|      Układ       |                                                  dokładny opis układu                                                  |    liczba uzyskanych punktów    |
 | :--------------: | :--------------------------------------------------------------------------------------------------------------------: | :-----------------------------: |
 |     **Para**     |                           dwie kości z tą samą liczbą oczek, pozostałe cztery się nie liczą                            |  suma oczek sparowanych kości   |
 |  **Dwie pary**   |     dwie kości z tą samą liczbą oczek, dwie inne kości z tą samą liczbą oczek, pozostałe dwie kości się nie liczą      |  suma oczek sparowanych kości   |
@@ -46,18 +51,18 @@ Po wykonaniu rzutów gracz zapisuje punkty do wybranej przez siebie kategorii. I
 
 Raz na grę, gracz może wykorzystać przerzut, czyli czwarty rzut w rundzie. Powinien on poinformować pozostałych graczy przed wykonaniem czwartego rzutu i wykreślić przerzut z tabeli.
 
-Dla przykładu, jeśli gracz wyrzuci 6 6 6 6 4 2, może wybrać jako układ parę (12 punktów), trójkę (18 punktów), dwie pary (24 punkty), karetę (34 punkty), parzyste lub punkty (30 punktów).
-
-## Więcej przykładów
+## Przykłady
 
 <img src="data/photos/111666.jpg" width=250/>  
   
-Układ 1 1 1 6 6 6. Gracz może wybrać jeden z układów: Dwie trójki (33 punkty), Oczko (21 punktów), Punkty (21 punktów), Fulla (20 punktów), Trójkę (18 punktów), Fulla (15 punktów), Dwie pary (14 punktów), Parę (12 punktów), Trójkę (3 punkty), Parę (2 punkty).
+Układ **1 1 1 6 6 6**. Gracz może wybrać jeden z układów: Dwie trójki (33 punkty), Oczko (21 punktów), Punkty (21 punktów), Fulla (20 punktów), Trójkę (18 punktów), Fulla (15 punktów), Dwie pary (14 punktów), Parę (12 punktów), Trójkę (3 punkty), Parę (2 punkty).
   
 <img src="data/photos/123456.jpg" width=250/>  
   
-Układ 1 2 3 4 5 6. Gracz może wybrać jeden z układów: Wielkiego strita (40 punktów), Dużego strita (30 punktów), Oczko (21 punktów), Punkty (21 punktów) albo Małego strita (20 punktów).  
+Układ **1 2 3 4 5 6**. Gracz może wybrać jeden z układów: Wielkiego strita (40 punktów), Dużego strita (30 punktów), Oczko (21 punktów), Punkty (21 punktów) albo Małego strita (20 punktów).  
 
 <img src="data/photos/555555.jpg" width=400/>  
   
-Układ 5 5 5 5 5 5. Gracz trafił Wielkiego Pokera (90 punktów), ale jeśli już wykreślił tę opcję, może jeszcze wybrać Pokera (55 punktów), Wielkiego Fulla(45 punktów), Dwie Trójki (42 punkty), Trzy pary (36 punktów), Karetę (34 punktów), Nieparzyste (30 punktów), Duże (30 puktów), Punkty (30 punktów), Fulla (25 punktów), Dwie pary (20 punktów), Trójkę (15 punktów), Parę (10 punktów).  
+Układ **5 5 5 5 5 5**. Gracz trafił Wielkiego Pokera (90 punktów), ale jeśli już wykreślił tę opcję, może jeszcze wybrać Pokera (55 punktów), Wielkiego Fulla(45 punktów), Dwie Trójki (42 punkty), Trzy pary (36 punktów), Karetę (34 punktów), Nieparzyste (30 punktów), Duże (30 puktów), Punkty (30 punktów), Fulla (25 punktów), Dwie pary (20 punktów), Trójkę (15 punktów), Parę (10 punktów).  
+
+Układ **6 6 6 6 4 2**. Gracz może wybrać jako układ Parę (12 punktów), Trójkę (18 punktów), Dwie Pary (24 punkty), Karetę (34 punkty), Parzyste lub Punkty (30 punktów).

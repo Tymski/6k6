@@ -52,6 +52,7 @@ function makeTemplate(csv) {
             cssClass = cssClass.toLowerCase().trim();
             element.classList.add(cssClass);
         });
+        content = document.querySelector('#content');
         content.appendChild(element);
 
         counter++;
