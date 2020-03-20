@@ -8,7 +8,7 @@ Gra oparta jest na pokerze na pięć kości sześciościennych, ale jest rozszer
 
 ### Opcja 1: Drukowanie z pdf
 
-[Tabela w .PDF](data/pdf/6k6.pdf)
+[Tabela w .PDF](https://github.com/Tymski/6k6/raw/master/data/pdf/6k6.pdf)
 
 ### Opcja 2: Drukowanie z przeglądarki
 
