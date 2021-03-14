@@ -57,7 +57,6 @@ header {
     border-top-width: 0;
     border-left-width: 0;
     border-bottom-width: var(--border-thickness);
-
     display: inline-block;
     padding: 0;
     width: 2cm;
@@ -81,12 +80,15 @@ header {
     border-bottom-width: var(--border-thickness-large);
     border-color: rgb(59, 59, 59);
 }
+
 .row div:nth-child(4) {
     border-right-width: var(--border-thickness-large);
 }
+
 .row div:last-child {
     border-right-width: 0;
 }
+
 .row:last-of-type {
     background-color: rgb(216, 216, 216);
 }
@@ -113,10 +115,12 @@ header {
     max-height: 100%;
     margin: 0.13mm;
 }
+
 .układ2 img[alt='■'] {
     max-width: 9%;
     margin: 0.2mm;
 }
+
 
 /* .percent::after {
     white-space: pre;
@@ -129,6 +133,7 @@ header {
     font-weight: bold;
     min-width: 2.65cm;
 }
+
 .układ2 {
     min-width: 2.3cm;
     font-size: 0.85em;
