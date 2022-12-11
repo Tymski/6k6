@@ -87,13 +87,15 @@ header {
 .row div:last-child {
     border-right-width: 0;
 }
+
+.wynik,
 .row:last-of-type {
     background-color: rgb(216, 216, 216);
 }
 
 .row {
     display: flex;
-    height: 1.2cm;
+    height: 1.14cm;
     border-color: white;
 }
 
@@ -240,7 +242,14 @@ div {
     text-decoration-color: rgb(168, 168, 168);
 }
 
-.parzyste,
-.nieparzyste {
+.oczko {
     background-color: rgba(255, 166, 0, 0.041);
+}
+
+.pół {
+    background-color: rgb(255, 242, 242);
+}
+
+.pół .układ2{
+    font-size: 0.6em;
 }
