@@ -27,7 +27,7 @@ body {
 .title {
     font-family: 'Baloo Bhai', cursive;
     font-variant: small-caps;
-    font-size: 1.5cm;
+    font-size: 1.3cm;
     margin: 0 auto;
     text-align: center;
     text-shadow: #ededed 0.5mm 0.3mm 0.2mm;
@@ -42,7 +42,7 @@ body {
 }
 
 header .spacer {
-    height: 3mm;
+    height: 5mm;
 }
 
 header {
@@ -81,21 +81,27 @@ header {
     border-bottom-width: var(--border-thickness-large);
     border-color: rgb(59, 59, 59);
 }
+
 .row div:nth-child(4) {
     border-right-width: var(--border-thickness-large);
 }
+
 .row div:last-child {
     border-right-width: 0;
 }
 
-.wynik,
-.row:last-of-type {
+.wynik {
     background-color: rgb(216, 216, 216);
+}
+
+.miejsce {
+    /* background-color: rgb(239, 239, 239); */
+    max-height: 0.8cm;
 }
 
 .row {
     display: flex;
-    height: 1.14cm;
+    height: 1.16cm;
     border-color: white;
 }
 
@@ -115,6 +121,7 @@ header {
     max-height: 100%;
     margin: 0.13mm;
 }
+
 .układ2 img[alt='■'] {
     max-width: 9%;
     margin: 0.2mm;
@@ -131,6 +138,7 @@ header {
     font-weight: bold;
     min-width: 2.65cm;
 }
+
 .układ2 {
     min-width: 2.3cm;
     font-size: 0.85em;
@@ -219,14 +227,8 @@ div {
     border-right-color: rgba(0, 0, 0, 0.425) !important;
 }
 
-.row:last-of-type {
-    -webkit-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
-    box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 0.473);
-}
-
 .full {
-    background-color: rgb(225, 255, 255);
+    background-color: rgb(218, 255, 255);
 }
 
 .parzyste .układ2,
@@ -242,14 +244,31 @@ div {
     text-decoration-color: rgb(168, 168, 168);
 }
 
-.oczko {
-    background-color: rgba(255, 166, 0, 0.041);
+.parzyste,
+.nieparzyste {
+    background-color: rgba(0, 255, 157, 0.11);
 }
 
 .pół {
-    background-color: rgb(255, 242, 242);
+    background-color: hsl(33, 100%, 97%);
 }
 
-.pół .układ2{
+.pół .układ2 {
     font-size: 0.6em;
+}
+
+.pół .player {
+    background: none;
+}
+
+.pół .player span {
+    width: 98%;
+    height: 98%;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 48%, hsl(33, 100%, 94%) 52%, hsl(33, 100%, 94%) 100%);
+}
+
+.row:last-of-type {
+    -webkit-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
+    box-shadow: 0mm 3.5mm 2mm -2.8mm rgba(0, 0, 0, 0.273);
 }

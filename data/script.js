@@ -12,7 +12,7 @@ xhttp.send();
 
 function makeTemplate(csv) {
     var counter = 0;
-    var doubleBorders = [0, 3, 6, 8, 10, 13, 15, 17, 19, 20, 21];
+    var doubleBorders = [0, 3, 6, 8, 10, 13, 15, 16, 18, 20, 21, 22];
 
     csv.forEach(row => {
         var [układ, układ2, bonus, szansa, klasyCSS] = row.split(',');
