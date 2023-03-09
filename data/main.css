@@ -153,11 +153,11 @@ header {
 }
 
 .blue {
-    background-color: rgb(229, 227, 252);
+    background-color: hsl(245, 81%, 95%);
 }
 
 .yellow {
-    background-color: rgb(255, 255, 217);
+    background-color: hsl(60, 100%, 94%);
 }
 
 .bigger {
@@ -228,7 +228,7 @@ div {
 }
 
 .full {
-    background-color: rgb(218, 255, 255);
+    background-color: hsl(180, 100%, 92%);
 }
 
 .parzyste .układ2,
@@ -246,7 +246,7 @@ div {
 
 .parzyste,
 .nieparzyste {
-    background-color: rgba(0, 255, 157, 0.11);
+    background-color: rgba(0, 255, 157, 0.12);
 }
 
 .pół {
@@ -271,4 +271,22 @@ div {
     -webkit-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
     -moz-box-shadow: 0mm 3.5mm 2mm -3mm rgba(0, 0, 0, 1);
     box-shadow: 0mm 3.5mm 2mm -2.8mm rgba(0, 0, 0, 0.273);
+}
+
+.szansa {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.045) 100%);
+}
+
+.player{
+    position: relative;
+}
+
+.row .player:nth-child(2n)::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.05);
 }
